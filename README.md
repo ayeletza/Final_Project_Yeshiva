@@ -37,7 +37,7 @@ Please visit our wiki for furthur project info:
 
 ### [User Manual](../../wiki/user-manual) (empty for now)
 
-### [Team Page](../../wiki/team)
+### [Team Page](https://github.com/tamarke/Final_Project_Yeshiva/wiki/Team-Page)
 
 ### Project Documents
 - [Project Idea](docs/idea.pdf) ([Presentation](docs/idea-slides.pdf))
