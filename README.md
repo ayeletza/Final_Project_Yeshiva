@@ -40,7 +40,7 @@ Please visit our wiki for furthur project info:
 ### [Team Page](https://github.com/tamarke/Final_Project_Yeshiva/wiki/Team-Page)
 
 ### Project Documents
-- [Project Idea](docs/idea.pdf) ([Presentation](docs/idea-slides.pdf))
+- [Project Idea](https://github.com/tamarke/Final_Project_Yeshiva/blob/master/YedidOn.pdf) ([Presentation](https://github.com/tamarke/Final_Project_Yeshiva/blob/master/YedidOn.pptx))
 - [Project Inception](../../wiki/inception)
 - [Software Requirements Specification](../../wiki/srs)
 - [Software Design Specification](../../wiki/sds)
