@@ -1,10 +1,9 @@
 Bs"d
 # YedidOn
 
-A template repository with wiki for a team project at JCE's software engineering course (replace with the mission of your project).
+Management software to Friends of Yeshivat "Hayey Moshe". Committee was established to provide financial support for the Yeshiva. The software maintain private databases of members, donations and events organized by the committee and will contain built-in functions and menus that give substance to the needs of committee and nature.
 
-(See also:rRecommended [checklist](https://github.com/ddbeck/readme-checklist/blob/master/checklist.md) for a README) 
-
+logo: (https://github.com/jce-il/ex1-webapp-deployment-ayeletza/blob/master/YedidOn-logo.jpg)
 ![project logo (this one for is taken from basecamp - a project management service)](https://www.klipfolio.com/sites/default/files/integrations/basecamp.png)
 
 ## Tools & Practices
