@@ -8,6 +8,8 @@ Management software to Friends of Yeshivat "Hayey Moshe". Committee was establis
 
 ## Tools & Practices
 We're trying to use the best tools and practices in order to produce a quality enginneered product.
+https://github.com/tamarke/Final_Project_Yeshiva/blob/master/YedidOn.pdf
+
 
 |Category|Status|
 |---|---|
