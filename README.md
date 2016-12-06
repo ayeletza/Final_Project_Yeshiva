@@ -36,7 +36,7 @@ This project is developed as part of the requirements for a [software engineerin
 Please visit our wiki for furthur project info: 
 
 ### [User Manual](https://github.com/tamarke/Final_Project_Yeshiva/wiki/User-Manual)
-
+### [Developer Manual](https://github.com/tamarke/Final_Project_Yeshiva/wiki/Developer-Manual)
 ### [Team Page](https://github.com/tamarke/Final_Project_Yeshiva/wiki/Team-Page)
 
 ### Project Documents
