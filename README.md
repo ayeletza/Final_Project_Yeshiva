@@ -42,6 +42,8 @@ Please visit our wiki for furthur project info:
 ### Project Documents
 - [Project Idea](https://github.com/tamarke/Final_Project_Yeshiva/blob/master/YedidOn.pdf) ([Presentation](https://github.com/tamarke/Final_Project_Yeshiva/blob/master/YedidOn.pptx))
 - [Project Inception](../../wiki/inception)
+- [SRS](https://github.com/tamarke/Final_Project_Yeshiva/blob/master/YedidOnSRS.pdf)
+- [SDS](https://github.com/tamarke/Final_Project_Yeshiva/wiki/Software-Design-Specification-(SDS))
 
 ### Iteration Pages
 - [Iteration 0 - ZFR](../../wiki/iter0-zfr)
