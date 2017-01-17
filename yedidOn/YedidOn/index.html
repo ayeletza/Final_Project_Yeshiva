@@ -1,0 +1,31 @@
+<!--BS"D-->
+<!DOCTYPE html>
+<html dir="rtl" ng-app="myApp">
+<head>
+	<meta charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+	<script src="/app.js"></script>
+	<link rel="stylesheet" href="/indexCss.css"/>
+	<title>ידיד-און</title>
+
+</head>
+<body ng-controller="HomeController">
+	<center>
+		בס"ד
+	</center>
+	<header dir="rtl">
+		<center>
+			<a class="active" href="#home"><input id="Button1"class="headbutton" type="button" value="דף הבית" /></a>
+			<a href="#olders"><input id="Button2" class="headbutton"type="button" value="בוגרים" /></a>
+			<a href="#donates"><input id="Button3" class="headbutton"type="button" value="תרומות" /></a>
+		</center>
+		<img id="logo" src="/YedidOn-logo.jpg" />
+	</header>
+
+
+	<div ng-view>
+	</div>
+</body>
+</html>

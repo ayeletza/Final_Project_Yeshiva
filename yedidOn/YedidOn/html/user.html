@@ -1,0 +1,36 @@
+﻿<center>
+    <div id="proj2">
+        <table>
+            <thead>
+                <td>
+                    <b>
+                        שם:
+                    </b>
+                </td>
+                <td>
+                    <b>
+                        מספר זהות:
+                    </b>
+                </td>
+                <td>
+                    <b>
+                        מידע נוסף:
+                    </b>
+                </td>
+            </thead>
+
+            <tr ng-repeat="student in students">
+                <!--[{{$index + 1}}]  who is  years old.-->
+                <td>
+                    {{student.name}}
+                </td>
+                <td>
+                    {{student.id}}
+                </td>
+                <td>
+                    <a href="#details"><input id="Button1" class="headbutton1" type="button" value="הקלק כאן" /></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</center>
