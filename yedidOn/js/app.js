@@ -40,9 +40,39 @@ myApp.controller('HomeController',function($scope)
 });
 myApp.controller('newGraduateController',function($scope)
 {
-	$scope.msg='Welcome to the project page';
+	$scope.CreateGraduate = function() {
 
-	$scope.test = "Test"
+		if (window.XMLHttpRequest)
+			var xmlhttp = new XMLHttpRequest();
+		else
+			var xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+
+	 		var details=
+			{
+				"firstName": GraduateForm.firstName.value,
+				"lastName": GraduateForm.lastName.value,
+				"id": GraduateForm.id.value,
+				"phone":GraduateForm.phone.value,
+				"cellPhone": GraduateForm.cellPhone.value,
+				"adress": GraduateForm.adress.value,
+				"email": GraduateForm.email.value,
+				"course": GraduateForm.course.value
+			};
+
+		xmlhttp.onreadystatechange = function () {
+
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+				alert(xmlhttp.responseText);
+				$scope.$apply();
+
+
+			}
+		}
+		xmlhttp.open('POST', 'http://localhost:8080/CreateGraduate');
+		xmlhttp.setRequestHeader("Content-Type", "application/json;charset=utf-8");
+		xmlhttp.send(JSON.stringify(details));
+	}
 });
 myApp.controller('newDonationController',function($scope)
 {

@@ -8,12 +8,14 @@
         <title>רישום בוגר</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<!--[if lt IE 9]> <script src="/html5shiv.js"></script>
-	<script src="/respond.min.js"></script> <![endif]-->
         <!-- Place favicon.ico in the root directory -->
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+		<!--[if lt IE 9]> <script src="/html5shiv.js"></script>
+	<script src="/respond.min.js"></script> <![endif]-->
+		<script src="/app.js"></script>
         <link rel="stylesheet" href="/normalize.css">
         <link rel="stylesheet" href="/main.css">
         <link rel="stylesheet" href="/bootstrap.min.css">
@@ -39,8 +41,8 @@
 			</div>
 			<div class="col-sm-6">
 				<div id="cnt_form">
-					<form id="contact-form" class="contact" name="contact-form" method="post" action="saveGraduate">
-						<div class="form-group">firstName:
+					<form id="contact-form" class="contact" name="GraduateForm" ng-submit="CreateGraduate(GraduateForm)">
+						<div class="form-group">
 						<input type="text" name="firstName" class="form-control name-field" required="required" placeholder="שם פרטי">
 						</div>
 						<div class="form-group">
