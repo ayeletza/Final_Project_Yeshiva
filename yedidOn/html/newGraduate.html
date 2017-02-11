@@ -1,0 +1,157 @@
+<!-- 
+	bs"d--> 		
+<!doctype html>
+<html class="no-js" lang="hebrew">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>רישום בוגר</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!--[if lt IE 9]> <script src="/html5shiv.js"></script>
+	<script src="/respond.min.js"></script> <![endif]-->
+        <!-- Place favicon.ico in the root directory -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/normalize.css">
+        <link rel="stylesheet" href="/main.css">
+        <link rel="stylesheet" href="/bootstrap.min.css">
+        <link rel="stylesheet" href="/font-awesome.min.css">
+        <link rel="stylesheet" href="/owl.carousel.css">
+        <link rel="stylesheet" href="/responsive.css">
+        <link rel="stylesheet" href="/style.css">
+
+    </head>
+<body >
+
+
+<!-- start contact us Section -->
+<section id="ctn_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="title_sec">
+					<br><br>
+					<h1>טופס רישום בוגר:</h1>
+					<h2>נא לוודא מילוי תקין</h2>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div id="cnt_form">
+					<form id="contact-form" class="contact" name="contact-form" method="post" action="saveGraduate">
+						<div class="form-group">firstName:
+						<input type="text" name="firstName" class="form-control name-field" required="required" placeholder="שם פרטי">
+						</div>
+						<div class="form-group">
+							<input type="text" name="lastName" class="form-control name-field" required="required" placeholder="שם משפחה">
+						</div>
+						<div class="form-group">
+							<input type="text" name="id" class="form-control name-field" required="required" pattern="[0-9]{9}"  placeholder="מספר זהות">
+						</div>
+						<div class="form-group">
+							<input type="text" name="phone" class="form-control name-field" pattern="((0([0-9]{9}))|(0([0-9]{8})))"  placeholder="טלפון נייח">
+						</div>
+						<div class="form-group">
+							<input type="text" name="cellPhone" class="form-control name-field"   pattern="((0([0-9]{9})" placeholder="טלפון נייד">
+						</div>
+						<div class="form-group">
+							<input type="text" name="adress" class="form-control name-field" required="required" placeholder="כתובת">
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control mail-field" placeholder="דואר אלקטרוני">
+						</div>
+						<div class="form-group">
+							<input type="text" name="year" class="form-control name-field" required="required" pattern="[א-ת]{2}" placeholder="מחזור לימוד">
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary">רישום</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="/vendor/jquery-1.11.2.min.js"></script>
+
+<script src="/isotope.pkgd.min.js"></script>
+<script src="/bootstrap.min.js"></script>
+<script src="/jquery-ui.js"></script>
+<script src="/appear.js"></script>
+<script src="/jquery.counterup.min.js"></script>
+<script src="/waypoints.min.js"></script>
+<script src="/owl.carousel.min.js"></script>
+<script src="/showHide.js"></script>
+<script src="/jquery.nicescroll.min.js"></script>
+<script src="/jquery.easing.min.js"></script>
+<script src="/scrolling-nav.js"></script>
+<script src="/plugins.js"></script>
+
+<script src="/main.js"></script>
+
+<script src="showHide.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+   $('.show_hide').showHide({			 
+		speed: 1000,  // speed you want the toggle to happen	
+		easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
+		changeText: 1, // if you dont want the button text to change, set this to 0
+		showText: 'View',// the button text to show when a div is closed
+		hideText: 'Close' // the button text to show when a div is open
+					 
+	}); 
+
+
+});
+
+</script>
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+
+<script>
+
+  //Hide Overflow of Body on DOM Ready //
+$(document).ready(function(){
+    $("body").css("overflow", "hidden");
+});
+
+// Show Overflow of Body when Everything has Loaded 
+$(window).load(function(){
+    $("body").css("overflow", "visible");        
+    var nice=$('html').niceScroll({
+	cursorborder:"5",
+	cursorcolor:"#00AFF0",
+	cursorwidth:"3px",
+	boxzoom:true, 
+	autohidemode:true
+	});
+
+});
+</script>
+
+
+
+    </body>
+</html>
+
+
