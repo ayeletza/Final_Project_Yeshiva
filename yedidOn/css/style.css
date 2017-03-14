@@ -17,7 +17,14 @@ text-transform : capitalize;
 font-weight : 800;
 text-transform : uppercase;
 }
-
+#listOfGraduates
+{
+	width: 70%;
+	padding: 20px;
+	border: inset;
+	table-layout: inherit;
+	table-border-color-light: black;
+}
 
 h1{
 	font-size : 28px;

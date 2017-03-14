@@ -40,19 +40,19 @@
             </div>
             <div class="col-sm-6">
                 <div id="cnt_form">
-                    <form id="contact-form" class="contact" name="contact-form" method="post" action="send-mail.php">
+                    <form id="contact-form" class="contact" name="donateForm" ng-submit="CreateDonate(donateForm)">
                         <div class="form-group">
-                            <input type="number" name="name" class="form-control name-field" required="required" pattern="[0-9]{9}"  placeholder="מספר זהות">
+                            <input type="number" name="id" class="form-control name-field" required="required" pattern="[0-9]{9}"  placeholder="מספר זהות">
                         </div>
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control name-field" required="required" pattern="[א-ת]{2}" placeholder="תאריך">
+                            <input type="date" name="date" class="form-control name-field" required="required" placeholder="תאריך">
                         </div>
                         <div class="form-group">
-                            <input type="number" name="name" class="form-control name-field" required="required" min="0" placeholder="סכום">
+                            <input type="number" name="sum" class="form-control name-field" required="required" min="0" placeholder="סכום">
                         </div>
                         <div class="form-group">
 
-                            <select onchange="paymentChange()">
+                            <select  name="paymentWay" onchange="paymentChange()">
                                 <option value="0">מזומן</option>
                                 <option value="1">צ'ק</option>
                                 <option value="2">הוראת קבע</option>

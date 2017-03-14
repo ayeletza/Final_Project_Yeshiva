@@ -6,12 +6,15 @@ var http = require('http'),
     bodyParser = require('body-parser'),
     path = require('path'),
     url = require('url'),
+    //qs = require('query-string'),
     mongoose = require("mongoose");
     var app = express();
 
     mongoose.connect("mongodb://yedidon:yedidON100@ds021356.mlab.com:21356/yedidondb");
 
-    var GraduateSchema = {
+var Schema = mongoose.Schema;
+
+    var GraduateSchema = new Schema({
         firstName: String,
         lastName: String,
         id: String,
@@ -20,16 +23,18 @@ var http = require('http'),
         adress: String,
         email: String,
         course: String
-    }
+    }, {collection: 'Graduate'});
+
+	var DonateSchema = new Schema({
+        id: String,
+        date: String,
+        sum: String,
+        paymentWay: String,
+
+    }, {collection: 'Donate'});
 
     var Graduate = mongoose.model('Graduate', GraduateSchema, 'graduates');
-
-
-
-
-
-
-
+	var Donate = mongoose.model('Donate', DonateSchema, 'donates');
 
 // APP CONFIGURATION------------------------------------------
 // use body parser to grab information from POST
@@ -54,11 +59,44 @@ app.get('/', function(req, res) {
 });
 
 app.post('/CreateGraduate', function (req, res) {
+    Graduate.create({
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        id: req.body.id,
+        phone: req.body.phone,
+        cellPhone: req.body.cellPhone,
+        address: req.body.address,
+        email: req.body.email,
+        course: req.body.year
 
-       var newGraduate= Graduate.insert(req);
+    }, function (err, data) {
+        if (err) return console.error(err);
+
         res.send("פרטי הבוגר נרשמו בהצלחה!");
-
+    });
 });
 
+app.post('/CreateDonate', function (req, res) {
+    Donate.create({
+        id: req.body.id,
+        date: req.body.date,
+        sum: req.body.sum,
+        paymentWay: req.body.paymentWay
+
+    }, function (err, data) {
+        if (err) return console.error(err);
+
+        res.send("פרטי התרומה נרשמו בהצלחה!");
+    });
+});
+app.get('/GetGraduates', function (req, res) {
+    Graduate.find( function(err, data)
+        {
+            if(err)
+                return console.error(err);
+            res.send(data);
+        }
+    );
+});
 
 app.listen(8080);
