@@ -3,8 +3,7 @@ Bs"d
 
 Management software to Friends of Yeshivat "Hayey Moshe". Committee was established to provide financial support for the Yeshiva. The software maintain private databases of members, donations and events organized by the committee and will contain built-in functions and menus that give substance to the needs of committee and nature.
 
-![project logo (this one for is taken from basecamp - a project management service)]
-(https://github.com/tamarke/Final_Project_Yeshiva/blob/master/YedidOn-logo.jpg)
+![project logo (this one for is taken from basecamp - a project management service)](https://github.com/tamarke/Final_Project_Yeshiva/blob/master/YedidOn-logo.jpg)
 
 ## Tools & Practices
 We're trying to use the best tools and practices in order to produce a quality enginneered product.
